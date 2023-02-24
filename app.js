@@ -16,7 +16,7 @@ const router=require("./routes/router")
 
 
 
-const port =5000;
+const port =Process.env.port ||  5000;
 
 app.use(cors());
 app.use(express.json())
